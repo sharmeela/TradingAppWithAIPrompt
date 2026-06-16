@@ -1,7 +1,8 @@
 # AtlasTrade Trading Platform Scaffold
 
 AI prompt based Trading app
-
+Used "geckocoin" api for integraton. 
+Added "rate limit" and Websocket" logic for real time data. 
 ## Structure
 - frontend/ — Next.js App Router, Tailwind, charts, and trading widgets.
 - backend/ — Express + WebSocket server for live market data.
