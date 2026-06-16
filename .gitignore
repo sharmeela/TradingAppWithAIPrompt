@@ -1,0 +1,14 @@
+node_modules
+frontend/.next
+backend/dist
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+temp_auto_push.batcd

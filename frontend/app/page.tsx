@@ -30,6 +30,7 @@ export default function Home() {
           </div>
           <div className="space-y-6">
             <OrderBook />
+            
             <article className="rounded-3xl border border-slate-800 bg-slate-900/90 p-6 shadow-glow">
               <div className="flex items-center gap-3 text-cyan-300">
                 <ShieldCheck className="h-5 w-5" />
@@ -41,21 +42,21 @@ export default function Home() {
                 <li>• Keep chart data, user positions, and watchlists isolated in modular routes.</li>
               </ul>
             </article>
+            <article className="rounded-3xl border border-slate-800 bg-slate-900/90 p-6 shadow-glow">
+              <div className="flex items-center gap-3 text-cyan-300">
+                <TrendingUp className="h-5 w-5" />
+                <h2 className="text-lg font-semibold">Extending this scaffold</h2>
+              </div>
+              <ul className="mt-4 space-y-3 text-sm text-slate-300">
+                <li>• Add user auth and personalized watchlists.</li>
+                <li>• Integrate with trading APIs to place orders.</li>
+                <li>• Build custom charting components with WebSocket data.</li>
+              </ul>
+            </article>
           </div>
         </section>
-
         <section className="grid gap-6 md:grid-cols-3">
-          {[
-            { icon: TrendingUp, label: 'Market pulse', text: 'Fast tickers for crypto and equities.' },
-            { icon: Bitcoin, label: 'Cross-asset', text: 'Shared hooks for stocks, crypto, and fiat pairs.' },
-            { icon: Activity, label: 'Latency aware', text: 'WebSocket-first architecture for real-time updates.' },
-          ].map(({ icon: Icon, label, text }) => (
-            <article key={label} className="rounded-3xl border border-slate-800 bg-slate-900/90 p-6 shadow-glow">
-              <Icon className="h-5 w-5 text-cyan-300" />
-              <h3 className="mt-3 text-lg font-semibold">{label}</h3>
-              <p className="mt-2 text-sm text-slate-300">{text}</p>
-            </article>
-          ))}
+          
         </section>
       </section>
     </main>
